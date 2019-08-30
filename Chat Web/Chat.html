@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Sayan Chat</title>
+    <link rel="stylesheet" href="Chat.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <body>
+        <section class="authorization">
+                <form class="authorization-box" action="?" id="auth">
+                    <div class="info">
+                        <h5>Type your name here and join</h5>
+                        <input type="text" required />
+                        <input type="submit" value="JOIN !!!"/>
+                    </div>
+                </form>
+          </section>
+      <section class="chat-box">
+          <div class="online">
+              <div class="user"></div>
+          </div>
+          <div class="chat-list">
+              <div class="messages">
+          </div>
+        </div>
+          <form id="message-box" action="?">
+              <div class="input-box">
+                  <div class="in">
+                      <input type="text" class="content" placeholder="Send to Chat" require="">
+                      <input type="file" class="send-image" id="fileinput" multiple accept='image/*'>
+                      <input type="submit" value="+" style="display: none;">
+                  </div>
+              </div>
+            </form>
+      </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+      <script src="Chat.js"></script>
+   </body>
+</html>
